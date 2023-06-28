@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+.top-nav{
+    background-color: #4F46E5;
+    width: 100%;
+    height: 3rem;
+    border-radius: 3px;
+    
+}
+.welcome-user{
+    margin: 0;
+    color:#f8fafc;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-style: italic;
+    font-weight: 800;
+}
+.todo-list{
+    color:#dc2626;
+}
+/* .todoItem{
+    list-style: none;
+} */
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+.not{
+    text-decoration: underline;
+}
+.del{
+    color: #dc2626;
+    background-color: #ecfccb;
+    border: 1px solid #fee2e2;
+    border-radius: 5px;
+}
+

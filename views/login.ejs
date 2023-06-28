@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap">
+      <link rel="stylesheet" href="css/login.css">
+      <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1 id="header">Right where you left off<h1> -->
+      
+      <% if (locals.messages.errors) { %>
+          <% messages.errors.forEach( el => { %>
+              <div class="alert alert-danger"><%= el.msg %></div>
+          <% }) %>    
+      <% } %>
+      <% if (locals.messages.info) { %>
+          <% messages.info.forEach( el => { %>
+              <div class="alert alert-danger"><%= el.msg %></div>
+          <% }) %>    
+      <% } %>
+      
+
+    <form action="/login" method="POST" class="form">
+      <p class="form-title">Sign in to your account</p>
+       <div class="input-container">
+         <input type="email" name="email" placeholder="Enter email">
+         <span>
+         </span>
+     </div>
+     <div class="input-container">
+         <input type="password" name="password" placeholder="Enter password">
+       </div>
+        <button type="submit" class="submit">
+       Sign in
+     </button>
+
+     <p class="signup-link">
+       No account?
+       <a href="/signup">Sign up</a>
+     </p>
+  </form>
+
+    
+
+      <!-- <script src="public/js/index.js" defer> </script> -->
+  </body>
+</html>
